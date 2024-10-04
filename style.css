@@ -1,0 +1,64 @@
+body {
+    background-image: url('https://img.freepik.com/free-photo/monochrome-portrait-person-surfing-amongst-waves_23-2151305810.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    color: teal;
+}
+
+h2 {
+    margin: 40px;
+    font-size: 40px;
+    color: teal;
+}
+
+.paragraph {
+    margin: 40px;
+}
+
+.profiles {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-around; /* Evenly space out the items */
+    flex-wrap: wrap; /* Allow wrapping of items if screen is too narrow */
+    margin: 40px;
+    text-align: center;
+}
+
+.profile {
+    position: relative;
+    margin: 20px;
+    text-align: center;
+}
+
+.profile img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Add styling for surfer names to float on top of images */
+.surfer-name {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    color: white;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    padding: 5px;
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
